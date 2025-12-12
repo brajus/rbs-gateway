@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>gs-gateway</artifactId>
+	<artifactId>rbs-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>gs-gateway</name>
-	<description>Demo project for Spring Boot</description>
+	<name>rbs-gateway</name>
+	<description>Gateway service for RBS microserices </description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.2</spring-cloud.version>
@@ -26,7 +26,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
